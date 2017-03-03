@@ -1,0 +1,10 @@
+<template>
+  <require from="custom-row"></require>
+  Is Compact: <input type="checkbox" checked.bind="isCompact" />
+
+  <table>
+    <tbody>
+      <tr as-element="custom-row" repeat.for="person of personnel" person.bind="person" is-compact.bind="isCompact"></tr>
+    </tbody>
+  </table>
+</template>

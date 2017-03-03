@@ -1,0 +1,5 @@
+<template>
+  <td if.bind="isCompact">${person.firstName}</td>
+  <td >${person.lastName}</td>
+  <td if.bind="!isCompact">${person.favoriteColor}</td>
+</template>
